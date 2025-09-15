@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene> <a-camera><a-cursor></a-cursor></a-camera>
+            <a-plane position="0 -1 -4" rotation="-90 0 0" width="100" height="20" color="#7BC8A4"></a-plane>
+        <a-box position="2 0 -4" color="red" 
+        animation__1=" property: position;
+        from: 2 0 -4;
+        to: 0 20 -4;
+        dur: 1000; 
+        loop: true;
+        dir: alternate;"
+        animation__2=" property: scale;
+        from: 1;
+        to: 0;
+        startEvents: click;"></a-box>
+        <a-sphere position="0 3.7 -4" color="blue"
+        animation__1=" property: position;
+        from: 0 3.7 -4;
+        to: 10 0 -4;
+        dur: 1000;
+        loop: true;
+        dir: alternate
+        "
+        animation__2=" property: scale;
+        from: 1;
+        to: 0;
+        startEvents: click
+        "></a-sphere>
+        <a-cone position="0 2 -4" color="green"
+        animation=" property: position;
+        from: 0 2 -4;
+        to: 0 -20 -4;
+        loop: true;
+        dur: 1000;
+        dir: alternate
+        "
+        animation__2="
+        property: scale;
+        from: 1;
+        to: 0; 
+        startEvents: click;"></a-cone>
+        <a-cylinder position="0 0 -4" color="orange"
+        animation=" property: position;
+        from: 0 0 -4;
+        to: 0 0 -20;
+        loop: true;
+        dur: 1000;
+        dir: alternate
+        "
+        animation__2=" property: scale;
+        from: 1;
+        to: 0;
+        startEvents: click;"></a-cylinder>
+        
+        <a-dodecahedron color="#FF926B" radius="1" position=" -2 1 -4"
+        animation=" property: position;
+        from: -2 1 -4;
+        to: -2 1 10;
+        loop: true;
+        dur: 1000;
+        dir: alternate
+        "
+        animation__2=" property: scale;
+        from: 1;
+        to: 0;
+        startEvents: click;"></a-dodecahedron>
+        </a-scene>
+    </body>
+</html>
